@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classroom cno="c0001" size="10">
+    <cname>计算机</cname>
+	<grade>10</grade>
+	<student stuno="s0001" sex="男">
+		<stuname>东东</stuname>
+		<stuss>东1-601</stuss>
+		<oother oa="oa1">
+			<a1>11</a1>
+			<b1 b1="123">11</b1>
+		</oother>
+		<mobile>1300001</mobile>
+	</student>
+	<student stuno="s0003" sex="女">
+		<stuname>芳芳</stuname>
+		<stuss>东1-601</stuss>
+		<mobile>130000231</mobile>
+	</student>
+</classroom>

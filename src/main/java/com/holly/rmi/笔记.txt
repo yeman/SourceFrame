@@ -1,0 +1,21 @@
+1 接口继承Remote类 java.rmi.Remote
+
+2实现类除了实现接口,需要继承UnicastRemoteObject
+
+3 发布服务 
+		3.1   创建实现类
+		3.2 使用InitialContext rebind发布服务,之前需要使用LocateRegistry注册端口和设置使用System类java.rmi.server.hostname
+		3.3 代码例子:
+		Context context = new InitialContext();
+		System.setProperty("java.rmi.server.hostname", "127.0.0.1");
+		LocateRegistry.createRegistry(8080);
+		context.rebind("rmi://127.0.0.1:8080/demoService", demoService);
+
+4  客户端远程访问 (PS 公网上客户端一直找的是真是IP)
+	    4.1 拷贝客户端class
+	    4.2 InitialContext.lookup获取接口
+	    4.3 代码例子:
+	    Context context = new InitialContext();
+		RmiDemoService demoService = (RmiDemoService)context.lookup(url+serviceName);
+	    System.out.println("demoService是"+demoService.getClass().getName()+"的实例"); 
+	    UserInfo userInfo = demoService.queryUserInfo("1");		

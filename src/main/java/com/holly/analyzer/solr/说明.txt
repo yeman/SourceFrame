@@ -1,0 +1,14 @@
+1.搜索引擎及solr概述
+3.solr基于tomcat下安装
+2.solr基于jetty部署及安装
+4.solr管理控制台
+5.schema配置
+6.schema配置
+7.solrconfig配置
+8.solr_query
+9.solr_facet-highlight
+10.solrcloud概述
+11.solrcloud集群安装
+12.solrcloud分布式
+13.solrj-创建索引
+14.solrj-删除查询索引

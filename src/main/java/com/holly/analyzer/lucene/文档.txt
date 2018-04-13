@@ -1,0 +1,77 @@
+﻿1 存储域
+	Field.Store YES 或者NO 
+	设置YES标识把这个域中的内容完全存储到文件中,方便进行还原
+	设置NO标识把这个域中的内容不存储到文件中,但是可以被索引,此时内容无法完全还原(doc.get)
+
+2 索引域
+	Filed.Index 索引选项
+	Index.ANALYZED: 进行分词和索引, 适用于 标题 ,内容等
+	Index.NOT_ANALYZED: 进行索引,但是不进行分词  如 身份证号,姓名,ID等,适用于精确搜索
+	Index.ANALYZED_NOT_NORMS: 进行分词但是不存储norm信息,这个norms宝行创建索引的时间和权值等信息
+	Index.NOT_ANALYZED_NOT_NORMS: 不进行分词但是不存储norm信息
+	Index.NO 不进行索引
+
+3 查询
+	3.1 TermQuery 基本的查询
+	3.2 BooleanQuery
+		 1、MUST和MUST表示“与”的关系，即“并集”。 
+	     2、MUST和MUST_NOT前者包含后者不包含。 
+	     3、MUST_NOT和MUST_NOT没意义 
+	     4、SHOULD与MUST表示MUST，SHOULD失去意义； 
+	     5、SHOUlD与MUST_NOT相当于MUST与MUST_NOT。 
+	     6、SHOULD与SHOULD表示“或”的概念。
+	3.3 WildcardQuery 通配符查询
+	3.4 PhraseQuery 短语查询
+	3.5 PrefixQuery 前缀查询
+	3.6 FuzzyQuery 相似度查询
+	3.7 TermRangeQuery  范围查询
+
+4 QueryParser 
+
+5 分词器
+CJKAnalyzer 二分法分词器、
+KeywordAnalyzer、
+SimpleAnalyzer、
+StopAnalyzer、
+WhitespaceAnalyzer、
+StandardAnalyzer、
+
+ikanalyzer 2012_u6 依赖 Lucene4.7.2 API改动较大
+IKAnalyzer 中文分词 由于版本限制单独在新工程中启用
+
+6 同义词 停用词
+
+7 Filter
+
+
+8 
+  8.1搜索排序
+  	8.1.1 根据分值排序
+  	8.1.2 根据索引号排序
+  	8.1.3 根据不通的域进行排序
+  	8.1.4 倒序
+  	8.1.5 自定义排序 
+  8.2搜索过滤
+    8.2.1 TermRangeFilter
+    8.2.2 NumericRanageFilter
+    8.2.3 QueryWrapperFilter
+  8.3自定义评分
+  
+  8.4自定义QueryParser
+  
+  8.5自定义过滤器
+    
+     	
+  
+9 分页查询
+10 高亮
+
+
+11 搜索性能,读写互斥,文件锁
+
+12 源码 lucene-highlighter lucene-analyzers
+      lucene-memory-3.0.3 lucene-queries-3.0.3
+      lucene-queryparser-3.0.3 lucene-regex-3.0.3
+      lucene-smartcn-3.0.3
+
+

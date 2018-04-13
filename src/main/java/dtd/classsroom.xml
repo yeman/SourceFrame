@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE classroom SYSTEM "classroom.dtd" >
+<classroom cno="c0001">
+    <cname>计算机</cname>
+	<grade>10</grade>
+	<student stuno="s0001">
+		<stuname>张三</stuname>
+		<stuss>东1-601</stuss>
+		<mobile>1300001</mobile>
+	</student>
+</classroom>
