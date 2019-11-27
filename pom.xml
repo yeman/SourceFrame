@@ -16,7 +16,7 @@
 		<springVersion>4.2.2.RELEASE</springVersion>
 		<spring-data-redis-version>1.7.5.RELEASE</spring-data-redis-version>
 		<xbean-spring>4.2</xbean-spring>
-		<spring-data-jpa>1.6.6.RELEASE</spring-data-jpa>
+		<spring-data-jpa>1.11.23.RELEASE</spring-data-jpa>
 		<junit-version>4.12</junit-version>
 		<servlet-api-version>3.1.0</servlet-api-version>
 		<jstl-version>1.2</jstl-version>
