@@ -26,7 +26,7 @@
 		<hibernate-entitymanager>4.2.5.Final</hibernate-entitymanager>
 		<google-collections>1.0</google-collections>
 		<hessian-version>4.0.7</hessian-version>
-		<lucene-core-version>6.6.0</lucene-core-version>
+		<lucene-core-version>8.3.0</lucene-core-version>
 		<ikanalyzer-version>2012_u6</ikanalyzer-version>
 		<activemq-core-version>5.7.0</activemq-core-version>
 		<redis-client-version>2.6.2</redis-client-version>
