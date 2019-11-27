@@ -5,7 +5,7 @@ public class LazySingleton {
 	private static LazySingleton lazySingleton = null;
 
 	private LazySingleton() {
-		 System.out.println("Singleton 私有的构造方法被实例化 " + (++count) + " 次。");
+		System.out.println(Thread.currentThread().getName()+"\t"+"LazySingleton 私有的构造方法被实例化 " + (++count) + " 次。");
 	}
 
 	public static LazySingleton getInstance() {
