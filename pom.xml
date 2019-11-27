@@ -13,7 +13,7 @@
 	<properties>
 		<hibernate-version>4.2.5.Final</hibernate-version>
 		<hibernate-jpa-api>1.0.1.Final</hibernate-jpa-api>
-		<springVersion>4.2.2.RELEASE</springVersion>
+		<springVersion>5.2.1.RELEASE</springVersion>
 		<spring-data-redis-version>1.7.5.RELEASE</spring-data-redis-version>
 		<xbean-spring>4.2</xbean-spring>
 		<spring-data-jpa>1.6.6.RELEASE</spring-data-jpa>
